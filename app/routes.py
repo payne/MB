@@ -7,6 +7,7 @@ from app.forms import ConsumeForm
 @app.route('/')
 @app.route('/index')
 def index():
+  form = ConsumeForm()
   user = {'username': 'Miguel'}
   posts = [
     {
@@ -18,7 +19,7 @@ def index():
       'body': 'The Avengers movie was so cool!'
     }
   ]
-  return render_template('index.html', title='Home', user=user, posts=posts)
+  return render_template('index.html', title='Home', user=user, posts=posts, form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])
