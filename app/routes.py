@@ -28,3 +28,7 @@ def login():
     return redirect(url_for('index'))
   return render_template('login.html', title='Sign In', form=form)
 
+
+@app.route('/eg', methods=['GET', 'POST'])
+def example():
+  return render_template('example.html')
