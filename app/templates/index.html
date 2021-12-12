@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-  {% for item in stuff %}
-  <div><p>{{ item }}</p></div>
-  {% endfor %}
 
   <form action="" method="post" novalidate>
     {{ form.hidden_tag() }}
@@ -13,5 +10,10 @@
     </p>
     <p>{{ form.submit() }}</p>
   </form>
+
+  <h2>History</h2>
+  {% for item in stuff %}
+    <div><p>{{ item }}</p></div>
+  {% endfor %}
 
 {% endblock %}
