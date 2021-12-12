@@ -21,6 +21,11 @@ def index():
   users.current['stuff'] = stuff
   return render_template('index.html', title='Home', stuff=stuff, form=form)
 
+@app.route('/listHistory', methods=['GET', 'POST'])
+@web.authenticated
+def list_history():
+  return "<h1>Will list history</h1>"
+
 @app.route('/clear', methods=['GET', 'POST'])
 @web.authenticated
 def clear():
@@ -28,6 +33,10 @@ def clear():
   del users.current['stuff']
   return redirect(url_for("index"))
   # return f"<h2>database for {web.auth.name} has its 'stuff' key removed.</h2>"
+
+@app.route('/about', methods=['GET', 'POST'])
+def about():
+  return render_template('about.html')
 
 @app.route('/eg', methods=['GET', 'POST'])
 def example():

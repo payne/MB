@@ -2,18 +2,12 @@
 
 {% block content %}
 
-  <form action="" method="post" novalidate>
-    {{ form.hidden_tag() }}
-    <p>
-      {{ form.thing.label }}<br>
-      {{ form.thing }}<br>
-    </p>
-    <p>{{ form.submit() }}</p>
-  </form>
-
-  <h2>History</h2>
-  {% for item in stuff %}
-    <div><p>{{ item }}</p></div>
-  {% endfor %}
+<p>
+This simple counting application is made to run on 
+https://ReplIT.com
+and has all of it's source code at 
+<a href='https://github.com/payne/MB'>https://github.com/payne/MB</a>
+I encourage you to fork the repo and run the application yourself because ReplIT.com is fun.
+</p>
 
 {% endblock %}
