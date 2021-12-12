@@ -9,8 +9,9 @@ description = ""
 name = "flask-2"
 version = "0.1.0"
 [tool.poetry.dependencies]
-flask = "^1.1"
+flask = "^2.0.2"
 flask-wtf = "^0.14.3"
 python = "^3.8"
 wtforms = "^2.2"
+replit = "^3.2.4"
 [tool.poetry.dev-dependencies]
