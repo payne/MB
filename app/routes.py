@@ -10,8 +10,8 @@ from replit import db, web
 def index():
   form = ConsumeForm()
   users = web.UserStore()
-  #stuff = users.current['stuff']
-  stuff = [web.auth.name]
+  stuff = users.current.get('stuff', [])
+  # stuff = [web.auth.name]
   if form.thing.data:
     for x in form.thing.data:
       stuff.append(x)
