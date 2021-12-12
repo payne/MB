@@ -26,7 +26,8 @@ def index():
 def clear():
   users = web.UserStore()
   del users.current['stuff']
-  return f"<h2>database for {web.auth.name} has its 'stuff' key removed.</h2>"
+  return redirect(url_for("index"))
+  # return f"<h2>database for {web.auth.name} has its 'stuff' key removed.</h2>"
 
 @app.route('/eg', methods=['GET', 'POST'])
 def example():
