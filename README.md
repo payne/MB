@@ -8,3 +8,6 @@ You'll need to authenticate with your free (or paid) repl.it account.
 Started with hello world in python flask forked from https://replit.com/@JamesMorrey/flask-2
 
 Then try to get it working with bootstrap and the repl.it database
+
+About to change the menu away from the generic
+
