@@ -3,6 +3,7 @@ from app import app
 from app.forms import LoginForm
 from app.forms import ConsumeForm
 from replit import db, web
+from datetime import datetime
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -11,9 +12,12 @@ def index():
   form = ConsumeForm()
   users = web.UserStore()
   stuff = users.current.get('stuff', [])
+  dateTimeObj = datetime.now()
+  timestampStr = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+  ts = timestampStr
   if form.thing.data:
     for x in form.thing.data:
-      stuff.append(x)
+      stuff.append(f"{x} at {ts}")
   users.current['stuff'] = stuff
   return render_template('index.html', title='Home', stuff=stuff, form=form)
 
