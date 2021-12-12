@@ -4,8 +4,7 @@ from app.forms import LoginForm
 from app.forms import ConsumeForm
 
 
-@app.route('/')
-@app.route('/index', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
   form = ConsumeForm()
   stuff = ['this','that','other']
