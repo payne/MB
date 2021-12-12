@@ -5,21 +5,14 @@ from app.forms import ConsumeForm
 
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index', methods=['GET', 'POST'])
 def index():
   form = ConsumeForm()
-  user = {'username': 'Miguel'}
-  posts = [
-    {
-      'author': {'username': 'John'},
-      'body': 'Beautiful day in Portland!'
-    },
-    {
-      'author': {'username': 'Susan'},
-      'body': 'The Avengers movie was so cool!'
-    }
-  ]
-  return render_template('index.html', title='Home', user=user, posts=posts, form=form)
+  stuff = ['this','that','other']
+  if form.thing.data:
+    for x in form.thing.data:
+      stuff.append(x)
+  return render_template('index.html', title='Home', stuff=stuff, form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])
