@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app
 from app.forms import LoginForm
-from app.forms import ConsumeForm
+from app.forms import ConsumeForm, DepositForm
 from replit import db, web
 # https://replit-py.readthedocs.io/en/latest/
 from datetime import datetime
@@ -21,6 +21,19 @@ def eat():
   users.current['stuff'] = stuff
   return redirect(url_for("status"))
   
+@app.route('/deposit', methods=['GET', 'POST'])
+@web.authenticated
+def deposit():
+  users = web.UserStore()
+  deposits = users.current.get('deposits', [])
+  form = DepositForm()
+  dateTimeObj = datetime.now()
+  ts = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+  if form.amount.data:
+    deposits.append((form.amount.data,ts))
+    users.current['deposits'] = deposits
+  return render_template('deposit.html',title='Deposit',deposits = deposits, form=form)
+
 
 @app.route('/status', methods=['GET', 'POST'])
 @web.authenticated
