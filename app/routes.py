@@ -1,4 +1,5 @@
 from flask import render_template, flash, redirect, url_for, request
+import json
 from app import app
 from app.forms import DepositForm
 from replit import db, web
@@ -34,6 +35,19 @@ def deposit():
     users.current['deposits'] = deposits_list
   return render_template('deposit.html',title='Deposit',deposit_history = deposits_list, form=form)
 
+@app.route('/json', methods=['GET'])
+@web.authenticated
+def output_json():
+  users = web.UserStore()
+  stuff = users.current.get('stuff', [])
+  deposits = users.current.get('deposits', [])
+  # Loop over the stuff in the database to make plain lists that can be serialized to json
+  # TODO: Start using a class for things in the database instead of tuples
+  stuff_list = [ (a[0],a[1]) for a in stuff ]
+  deposits_list = [ (a[0],a[1]) for a in deposits ]
+  the_data = {'purchases': stuff_list, 'deposits': deposits_list}
+  s = json.dumps(the_data, indent = 1)
+  return f"<pre>{s}</pre>"
 
 @app.route('/status', methods=['GET', 'POST'])
 @web.authenticated
