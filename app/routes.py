@@ -61,8 +61,18 @@ def status():
   for thing in prices.keys():
     if (thing not in stuff):
       stuff[thing]=0
-  balance=0.0
+  deposits_list = users.current.get('deposits', [])
+  balance=compute_balance(stuff, deposits_list)
   return render_template('index.html', title='Home', stuff=stuff, balance=balance)
+
+def compute_balance(purchases, deposits):
+  total = 0.0
+  for dt in deposits:
+    total += float(dt[0])
+  for thing, count in purchases.items():
+    total -= float(prices[thing]) * count
+  return total
+  
 
 @app.route('/listHistory', methods=['GET', 'POST'])
 @web.authenticated
