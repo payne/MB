@@ -42,7 +42,7 @@ def status():
 def list_history():
   users = web.UserStore()
   stuff = users.current.get('stuff', [])
-  return render_template('index.html', title='Home', stuff=stuff)
+  return render_template('list.html', title='Home', history=stuff)
 
 @app.route('/clear', methods=['GET', 'POST'])
 @web.authenticated
