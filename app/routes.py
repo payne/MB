@@ -30,9 +30,10 @@ def status():
   # TODO(MGP): Total up the stuff so a summary can be created
   items = [ t[0] for t in stuff ] # Remove time stamps
   c = Counter(items)
-  stuff = []
-  for thing, count in c.most_common():
-     stuff.append((thing,count))
+  stuff = { thing:count  for thing, count in c.most_common() }
+  for thing in prices.keys():
+    if (thing not in stuff):
+      stuff[thing]=0
   
   return render_template('index.html', title='Home', stuff=stuff)
 
