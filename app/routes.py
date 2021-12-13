@@ -5,7 +5,9 @@ from app.forms import ConsumeForm
 from replit import db, web
 # https://replit-py.readthedocs.io/en/latest/
 from datetime import datetime
+from collections import Counter
 
+prices = { 'coke': 0.5, 'celsius': 0.9, 'candy': 0.25}
 
 @app.route('/eat', methods=['GET', 'POST'])
 @web.authenticated
@@ -26,6 +28,12 @@ def status():
   users = web.UserStore()
   stuff = users.current.get('stuff', [])
   # TODO(MGP): Total up the stuff so a summary can be created
+  items = [ t[0] for t in stuff ] # Remove time stamps
+  c = Counter(items)
+  stuff = []
+  for thing, count in c.most_common():
+     stuff.append((thing,count))
+  
   return render_template('index.html', title='Home', stuff=stuff)
 
 @app.route('/listHistory', methods=['GET', 'POST'])
