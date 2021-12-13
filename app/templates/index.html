@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  <h2>History</h2>
+  <h2>Balance {{balance}}</h2>
   {% for item, count in stuff.items() %}
     <div><p>{{item}} bought {{count}} times
        <a href="/eat?x={{item}}">

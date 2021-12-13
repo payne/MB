@@ -1,7 +1,6 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app
-from app.forms import LoginForm
-from app.forms import ConsumeForm, DepositForm
+from app.forms import DepositForm
 from replit import db, web
 # https://replit-py.readthedocs.io/en/latest/
 from datetime import datetime
@@ -25,14 +24,15 @@ def eat():
 @web.authenticated
 def deposit():
   users = web.UserStore()
-  deposits = users.current.get('deposits', [])
+  deposits_list = users.current.get('deposits', [])
   form = DepositForm()
   dateTimeObj = datetime.now()
   ts = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
   if form.amount.data:
-    deposits.append((form.amount.data,ts))
-    users.current['deposits'] = deposits
-  return render_template('deposit.html',title='Deposit',deposits = deposits, form=form)
+    amt = form.amount.data
+    deposits_list.append((f"{amt}",ts)) # replit database likes strings but not decimal.Decimal
+    users.current['deposits'] = deposits_list
+  return render_template('deposit.html',title='Deposit',deposit_history = deposits_list, form=form)
 
 
 @app.route('/status', methods=['GET', 'POST'])
@@ -47,21 +47,23 @@ def status():
   for thing in prices.keys():
     if (thing not in stuff):
       stuff[thing]=0
-  
-  return render_template('index.html', title='Home', stuff=stuff)
+  balance=0.0
+  return render_template('index.html', title='Home', stuff=stuff, balance=balance)
 
 @app.route('/listHistory', methods=['GET', 'POST'])
 @web.authenticated
 def list_history():
   users = web.UserStore()
   stuff = users.current.get('stuff', [])
-  return render_template('list.html', title='Home', history=stuff)
+  deposits_list = users.current.get('deposits', [])
+  return render_template('list.html', title='Home', history=stuff, deposit_history = deposits_list)
 
 @app.route('/clear', methods=['GET', 'POST'])
 @web.authenticated
 def clear():
   users = web.UserStore()
-  del users.current['stuff']
+  if 'stuff' in users.current: del users.current['stuff']
+  if 'deposits' in users.current: del users.current['deposits']
   return redirect(url_for("status"))
 
 @app.route('/', methods=['GET', 'POST'])

@@ -2,9 +2,17 @@
 
 {% block content %}
 
-  <h2>History</h2>
+  <h2>Purchases</h2>
+  <ol>
   {% for item in history %}
-    <div><p>{{item}}</p></div>
+    <li>{{item}}</li>
   {% endfor %}
+  </ol>
+  <h2>Deposits:</h2>
+  <ol>
+    {% for d in deposit_history %}
+    <li>{{d}}</li>
+    {% endfor %}
+  </ol>
 
 {% endblock %}
