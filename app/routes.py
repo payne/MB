@@ -9,6 +9,11 @@ from collections import Counter
 
 prices = { 'coke': 0.5, 'celsius': 0.9, 'candy': 0.25}
 
+class Purchase:
+   def __init__(self, a_thing, ts):
+     self.thing = a_thing
+     self.timestamp = ts
+
 @app.route('/eat', methods=['GET', 'POST'])
 @web.authenticated
 def eat():
