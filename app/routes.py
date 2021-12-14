@@ -9,10 +9,14 @@ from collections import Counter
 
 prices = {'coke': 0.5, 'celsius': 0.9, 'candy': 0.25}
 
-
 class Purchase:
     def __init__(self, a_thing, ts):
         self.thing = a_thing
+        self.timestamp = ts
+
+class Deposit:
+    def __init__(self, an_amt, ts):
+        self.amount = an_amt
         self.timestamp = ts
 
 class MyEncoder(json.JSONEncoder):
@@ -30,6 +34,7 @@ def eat():
     stuff = users.current.get('stuff', [])
     dateTimeObj = datetime.now()
     ts = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+    # Because of quirks of replit's db, and web can't store list objects
     stuff.append((x, ts))
     users.current['stuff'] = stuff
     return redirect(url_for("status"))
@@ -63,10 +68,10 @@ def output_json():
     deposits = users.current.get('deposits', [])
     # Loop over the stuff in the database to make plain lists that can be serialized to json
     # TODO: Start using a class for things in the database instead of tuples
-    stuff_list = [(a[0], a[1]) for a in stuff]
-    deposits_list = [(a[0], a[1]) for a in deposits]
+    stuff_list = [Purchase(a[0], a[1]) for a in stuff]
+    deposits_list = [Deposit(a[0], a[1]) for a in deposits]
     the_data = {'purchases': stuff_list, 'deposits': deposits_list}
-    s = json.dumps(the_data, indent=1)
+    s = json.dumps(the_data, indent=2, cls=MyEncoder)
     return f"<pre>{s}</pre>"
 
 
