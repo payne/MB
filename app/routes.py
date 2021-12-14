@@ -7,7 +7,13 @@ from replit import db, web
 from datetime import datetime
 from collections import Counter
 
-prices = {'coke': 0.5, 'celsius': 0.9, 'candy': 0.25}
+prices = {
+'Rice Krispy Treats': 0.21,
+'candy': 0.50,
+'Propel': 0.45,
+'coke': 0.40, 
+'celsius': 1.12
+}
 
 class Purchase:
     def __init__(self, a_thing, ts):
