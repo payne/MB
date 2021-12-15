@@ -95,6 +95,7 @@ def status():
             stuff[thing] = 0
     deposits_list = users.current.get('deposits', [])
     balance = compute_balance(stuff, deposits_list)
+    balance = "{:.2f}".format(balance)
     return render_template('index.html',
                            title='Home',
                            stuff=stuff,
