@@ -1,0 +1,26 @@
+{
+    "purchases": [
+      {
+        "thing": "coke",
+        "timestamp": "14-Dec-2021 (14:53:38.663286)"
+      },
+      {
+        "thing": "coke",
+        "timestamp": "14-Dec-2021 (14:53:39.890077)"
+      },
+      {
+        "thing": "coke",
+        "timestamp": "14-Dec-2021 (14:53:42.730259)"
+      },
+      {
+        "thing": "celsius",
+        "timestamp": "14-Dec-2021 (14:53:44.082888)"
+      }
+    ],
+    "deposits": [
+      {
+        "amount": "5.0",
+        "timestamp": "14-Dec-2021 (14:51:33.764313)"
+      }
+    ]
+  }
