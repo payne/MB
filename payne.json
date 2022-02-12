@@ -1,0 +1,51 @@
+{
+  "purchases": [
+    {
+      "thing": "coke",
+      "timestamp": "14-Dec-2021 (14:53:38.663286)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "14-Dec-2021 (14:53:39.890077)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "14-Dec-2021 (14:53:42.730259)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "14-Dec-2021 (14:53:44.082888)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "16-Dec-2021 (14:12:05.812796)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "16-Dec-2021 (14:12:06.189395)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "16-Dec-2021 (21:21:50.295288)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "17-Dec-2021 (13:19:00.250129)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "17-Dec-2021 (16:04:35.650595)"
+    }
+  ],
+  "deposits": [
+    {
+      "amount": "5.0",
+      "timestamp": "14-Dec-2021 (14:51:33.764313)"
+    },
+    {
+      "amount": "5.0",
+      "timestamp": "17-Dec-2021 (02:16:48.201032)"
+    }
+  ]
+}
+
