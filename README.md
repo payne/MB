@@ -15,3 +15,10 @@ Bootstrap 4 example added
 From https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/example-bs4.html
 which is part of https://github.com/fontenele/bootstrap-navbar-dropdowns
 
+```mermaid
+sequenceDiagram
+    Chrome->>+Flask: GET /
+    Flask->>+app.py: call function index
+    app.py->>+Flask: Big hunk of HTML
+    Flask->>+Chrome: The HTML from app.py
+```
