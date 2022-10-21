@@ -9,7 +9,7 @@ from collections import Counter
 
 prices = {
 'Rice Krispy Treats': 0.21,
-'candy': 0.50,
+'candy': 0.73,
 'Propel': 0.45,
 'coke': 0.40, 
 'celsius': 1.12
@@ -37,6 +37,7 @@ class MyEncoder(json.JSONEncoder):
 def eat():
     x = request.args.get('x')
     users = web.UserStore()
+
     stuff = users.current.get('stuff', [])
     dateTimeObj = datetime.now()
     ts = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")

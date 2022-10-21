@@ -1,0 +1,458 @@
+{
+  "purchases": [
+    {
+      "thing": "coke",
+      "timestamp": "14-Dec-2021 (14:53:38.663286)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "14-Dec-2021 (14:53:39.890077)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "14-Dec-2021 (14:53:42.730259)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "14-Dec-2021 (14:53:44.082888)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "16-Dec-2021 (14:12:05.812796)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "16-Dec-2021 (14:12:06.189395)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "16-Dec-2021 (21:21:50.295288)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "17-Dec-2021 (13:19:00.250129)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "17-Dec-2021 (16:04:35.650595)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "26-Feb-2022 (21:21:16.984859)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "28-Feb-2022 (15:45:16.621811)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "03-Mar-2022 (14:52:58.235275)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "18-Mar-2022 (17:36:19.343876)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "24-Mar-2022 (17:12:15.315871)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "31-Mar-2022 (13:09:27.462521)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "31-Mar-2022 (20:05:00.273176)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "31-Mar-2022 (20:05:02.189806)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "05-Apr-2022 (12:54:57.582219)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "05-Apr-2022 (12:54:59.072555)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "05-Apr-2022 (12:55:01.232287)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "07-Apr-2022 (18:56:27.059089)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "12-Apr-2022 (17:05:33.875213)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "12-Apr-2022 (17:05:35.569422)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "12-Apr-2022 (17:05:38.346335)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "14-Apr-2022 (20:33:22.663199)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "14-Apr-2022 (20:33:25.310872)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "19-Apr-2022 (22:09:58.080764)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "19-Apr-2022 (22:09:59.754604)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "21-Apr-2022 (21:59:41.975475)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "21-Apr-2022 (21:59:44.324097)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "21-Apr-2022 (21:59:47.231262)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "26-Apr-2022 (22:26:06.481078)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "26-Apr-2022 (22:26:09.134775)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "28-Apr-2022 (21:52:41.646470)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "28-Apr-2022 (21:52:43.817380)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "03-May-2022 (21:30:20.094066)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "04-May-2022 (22:55:31.040696)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "04-May-2022 (22:55:34.462595)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "04-May-2022 (22:55:40.889816)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "04-May-2022 (22:55:44.350318)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "05-May-2022 (20:51:23.543958)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "10-May-2022 (13:08:42.468825)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "10-May-2022 (20:36:21.220974)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "17-May-2022 (23:16:38.066540)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "17-May-2022 (23:16:39.585532)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "24-May-2022 (13:49:41.147745)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "24-May-2022 (13:49:42.872616)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "02-Jun-2022 (20:47:51.788124)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "02-Jun-2022 (20:47:55.043344)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "08-Jun-2022 (18:24:42.908143)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "08-Jun-2022 (18:24:45.043960)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "08-Jun-2022 (18:24:46.284555)"
+    },
+    {
+      "thing": "Rice Krispy Treats",
+      "timestamp": "20-Jun-2022 (23:15:24.762877)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "21-Jun-2022 (15:36:31.059553)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "22-Jun-2022 (18:50:15.831559)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "22-Jun-2022 (18:50:16.672179)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "22-Jun-2022 (19:34:31.955931)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "23-Jun-2022 (23:10:43.941321)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "28-Jun-2022 (21:34:17.747325)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "28-Jun-2022 (21:34:20.295523)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "28-Jun-2022 (21:34:21.665669)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "05-Jul-2022 (13:34:16.919074)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "05-Jul-2022 (13:34:18.206967)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "07-Jul-2022 (21:11:54.750501)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "07-Jul-2022 (21:11:57.891409)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "07-Jul-2022 (21:11:59.616246)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "12-Jul-2022 (23:23:25.693122)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "12-Jul-2022 (23:23:28.424908)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "13-Jul-2022 (17:59:32.743457)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "20-Jul-2022 (10:48:30.285068)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "20-Jul-2022 (10:48:34.462201)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "20-Jul-2022 (10:48:36.673703)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "20-Jul-2022 (15:56:06.677895)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "20-Jul-2022 (15:56:08.794117)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "20-Jul-2022 (19:52:49.658886)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "20-Jul-2022 (19:55:26.226577)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "21-Jul-2022 (19:28:01.596941)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "21-Jul-2022 (19:28:02.984068)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "21-Jul-2022 (19:28:05.251235)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "26-Jul-2022 (23:03:59.301446)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "26-Jul-2022 (23:04:01.703288)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "27-Jul-2022 (20:42:34.567655)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "28-Jul-2022 (20:01:18.450628)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "28-Jul-2022 (20:01:21.165313)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "02-Aug-2022 (15:44:06.524836)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "02-Aug-2022 (15:44:08.981990)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "03-Aug-2022 (17:56:54.626071)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "03-Aug-2022 (17:56:56.798761)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "03-Aug-2022 (17:56:58.747006)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "03-Aug-2022 (17:57:08.037030)"
+    },
+    {
+      "thing": "candy",
+      "timestamp": "03-Aug-2022 (19:29:09.390268)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "04-Aug-2022 (19:27:52.758722)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "04-Aug-2022 (19:27:55.833875)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "04-Aug-2022 (19:27:57.754054)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "09-Aug-2022 (20:32:49.416019)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "09-Aug-2022 (20:32:51.563777)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "09-Aug-2022 (20:32:53.289763)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "17-Aug-2022 (19:22:18.262284)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "17-Aug-2022 (19:22:20.275529)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "17-Aug-2022 (19:22:22.499321)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "18-Aug-2022 (21:11:18.343301)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "18-Aug-2022 (21:11:20.831710)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "18-Aug-2022 (21:11:25.245332)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "18-Aug-2022 (21:11:32.731705)"
+    },
+    {
+      "thing": "coke",
+      "timestamp": "19-Oct-2022 (01:52:10.869858)"
+    },
+    {
+      "thing": "celsius",
+      "timestamp": "19-Oct-2022 (01:52:13.478680)"
+    }
+  ],
+  "deposits": [
+    {
+      "amount": "5.0",
+      "timestamp": "14-Dec-2021 (14:51:33.764313)"
+    },
+    {
+      "amount": "5.0",
+      "timestamp": "17-Dec-2021 (02:16:48.201032)"
+    },
+    {
+      "amount": "20.00",
+      "timestamp": "20-Mar-2022 (15:23:00.378979)"
+    },
+    {
+      "amount": "20.0",
+      "timestamp": "01-May-2022 (15:49:22.427518)"
+    },
+    {
+      "amount": "20.00",
+      "timestamp": "28-Jun-2022 (12:59:14.089327)"
+    },
+    {
+      "amount": "20.0",
+      "timestamp": "04-Aug-2022 (22:08:09.947016)"
+    },
+    {
+      "amount": "20.0",
+      "timestamp": "04-Aug-2022 (22:08:16.875807)"
+    }
+  ]
+}
